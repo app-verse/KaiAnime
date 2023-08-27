@@ -295,11 +295,19 @@ export default function MainLayoutTwo({ page_name }: { page_name: string }) {
             }
             <div className="grid grid-cols-3 gap-3 md:gap-4">
                 <Link
+                    className={`${pageName === 'anime' && 'border-b-[1px] border-slate-300'} text-center
+                                    flex justify-center items-center gap-1 px-2 py-1
+                                  hover:bg-slate-700 hover:rounded-lg transition duration-300 ease-out`}
+                    href='/' onClick={tabLoading} id="linkAnime" >
+                    <FaSuperpowers className='text-green-400' />
+                    <div>Anime</div>
+                </Link>
+                <Link
                     className={`${pageName === 'movies' && 'border-b-[1px] border-slate-300'} text-center
                                   flex justify-center items-center gap-1 px-2 py-1
                                 hover:bg-slate-700 hover:rounded-lg transition duration-300 ease-out`}
-                    href='/' onClick={tabLoading} id="linkMovie">
-                    <MdOutlineLocalMovies className='text-green-400' />
+                    href='/movies' onClick={tabLoading} id="linkMovie">
+                    <MdOutlineLocalMovies className='text-red-400' />
                     <div>Movies</div>
                 </Link>
                 <Link
@@ -307,16 +315,8 @@ export default function MainLayoutTwo({ page_name }: { page_name: string }) {
                                     flex justify-center items-center gap-1 px-2 py-1
                                   hover:bg-slate-700 hover:rounded-lg transition duration-300 ease-out`}
                     href='/tv-series' onClick={tabLoading} id="linkTv" >
-                    <PiTelevisionSimpleBold className='text-red-400' />
+                    <PiTelevisionSimpleBold className='text-blue-400' />
                     <div>TV Series</div>
-                </Link>
-                <Link
-                    className={`${pageName === 'anime' && 'border-b-[1px] border-slate-300'} text-center
-                                    flex justify-center items-center gap-1 px-2 py-1
-                                  hover:bg-slate-700 hover:rounded-lg transition duration-300 ease-out`}
-                    href='/anime' onClick={tabLoading} id="linkAnime" >
-                    <FaSuperpowers className='text-blue-400' />
-                    <div>Anime</div>
                 </Link>
             </div>
             <div className={`sorting-nav my-6 ml-2 flex gap-2 items-center ${isSticky ? 'fixed-nav' : ''}`}>

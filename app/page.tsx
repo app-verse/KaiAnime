@@ -1,10 +1,10 @@
-import MainLayout from '@/components/mainLayout/MainLayout'
+import MainLayoutTwo from '@/components/mainLayout/MainLayoutTwo';
 
-export default function Movies() {
-  const page_name: string = 'movies';
+export default function Anime() {
+  const page_name: string = 'anime';
   return (
     <main className="mt-4 pb-16">
-      <MainLayout page_name={page_name} />
+      <MainLayoutTwo page_name={page_name} />
     </main>
   )
 }
