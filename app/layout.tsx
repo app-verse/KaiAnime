@@ -6,7 +6,7 @@ import { Nunito } from 'next/font/google'
 const nunito = Nunito({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'DhakarFlix',
+  title: 'KaiAnime',
   description: 'Created by app-verse',
   icons: {
     icon: ['/favicon.ico?v=4'],
