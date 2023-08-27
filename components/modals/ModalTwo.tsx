@@ -1,6 +1,5 @@
 import { AiFillYoutube } from 'react-icons/ai'
-import { GiQueenCrown } from 'react-icons/gi'
-import { GiIsland } from 'react-icons/gi'
+import { FaSuperpowers } from 'react-icons/fa'
 import { useRef, useEffect } from 'react'
 
 interface ModalTwoProps {
@@ -43,10 +42,9 @@ const ModalTwo: React.FC<ModalTwoProps> = ({ greet, greetings }) => {
                             <div className='movie-description text-left'>
                                 <h1 className='text-red-400 font-bold'>We are the Nyori Brothers:</h1>
                                 <p>Lidar Nyori and Bomjar Nyori. We're anime enthusiasts (Otakus).
-                                    {/* <span>
-                                        <GiQueenCrown className='inline text-yellow-500 text-lg ml-1 mr-1' />
-                                        <GiIsland className='inline text-white text-lg ml-1 mr-1' />
-                                    </span> */}
+                                    <span>
+                                        <FaSuperpowers className='inline text-red-400 text-lg ml-1 mr-1' />
+                                    </span>
                                 </p>
                             </div>
                             <div className='modal-image-cover mb-2'>
@@ -66,8 +64,7 @@ const ModalTwo: React.FC<ModalTwoProps> = ({ greet, greetings }) => {
                         <div className='bottom-part text-left mb-2 mt-1'>
                             <p>
                                 <span className='font-bold text-green-400'>Beyond </span>
-                                our love for anime, we are enthusiastic technophiles, constantly fueled by curiosity.
-                                We enjoy experimenting with new technologies and playing both video games and outdoor games.
+                                our love for anime, we enjoy experimenting with new technologies and playing both video games and outdoor games.
                                 We developed this web app for all Otakus to find information and watch trailer videos of anime
                                 from different seasons. We also made this app for the general population to discover details and watch
                                 trailers of movies and TV series.
