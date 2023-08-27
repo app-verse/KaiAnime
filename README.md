@@ -9,7 +9,7 @@ KaiAnime is a web app that provides users with detailed information and trailer 
 - User-friendly interface and responsive design for various devices.
 
 ## Demo Link:
-KaiAnime demo link [project website](https://dhakarflix.vercel.app/)
+KaiAnime demo link [project website](https://kaianime.vercel.app/)
 
 ## How to Use
 
